@@ -1,0 +1,25 @@
+﻿<Window x:Class="Biblioteka_Trap.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka_Trap"
+        mc:Ignorable="d"
+        Title="BIBLIOTEKA TRAP TRAP" Height="500" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/biblioteka-trap.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="BIBLIOTEKA TRAP" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="48" Foreground="White" Grid.Row="0"/>
+        <Button x:Name="wypozyczButton" Grid.Row="2" Width="150" Height="50" Content="WYPOŻYCZANIE"/>
+        <Button x:Name="ksiazkiButton" Grid.Row="3" Width="150" Height="50" Content="KSIĄŻKI"/>
+        <Button x:Name="klienciButton" Grid.Row="4" Width="150" Height="50" Content="KLIENCI"/>
+    </Grid>
+</Window>
